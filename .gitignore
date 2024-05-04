@@ -7,3 +7,5 @@ graph/schema.resolvers.go
 result.gql
 result.graphql
 generated.go
+.yarn/
+!.yarn/release/*
