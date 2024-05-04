@@ -21876,6 +21876,8 @@ type ProductInput struct {
 	RequiresSellingPlan *bool `json:"requiresSellingPlan,omitempty,omitempty"`
 	// Claim ownership of a product.
 	ClaimOwnership *ProductClaimOwnershipInput `json:"claimOwnership,omitempty,omitempty"`
+	// The product category in the Shopify product taxonomy.
+	ProductCategory *ProductCategoryInput `json:"productCategory,omitempty,omitempty"`
 }
 
 // Return type for `productJoinSellingPlanGroups` mutation.

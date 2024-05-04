@@ -38373,6 +38373,9 @@ input ProductInput {
 
   """Claim ownership of a product."""
   claimOwnership: ProductClaimOwnershipInput
+  
+  """The product category in the Shopify product taxonomy."""
+  productCategory: ProductCategoryInput
 }
 
 """Return type for `productJoinSellingPlanGroups` mutation."""
