@@ -22363,6 +22363,8 @@ type ProductSetInput struct {
 	ProductOptions []OptionSetInput `json:"productOptions,omitempty"`
 	// Claim ownership of a product.
 	ClaimOwnership *ProductClaimOwnershipInput `json:"claimOwnership,omitempty,omitempty"`
+	// The product category in the Shopify product taxonomy.
+	ProductCategory *ProductCategoryInput `json:"productCategory,omitempty,omitempty"`
 }
 
 // An entity that represents details of an asynchronous

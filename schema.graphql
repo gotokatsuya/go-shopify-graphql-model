@@ -39104,6 +39104,9 @@ input ProductSetInput {
 
   """Claim ownership of a product."""
   claimOwnership: ProductClaimOwnershipInput
+
+  """The product category in the Shopify product taxonomy."""
+  productCategory: ProductCategoryInput
 }
 
 "An entity that represents details of an asynchronous\n[ProductSet](https://shopify.dev/api/admin-graphql/current/mutations/productSet) mutation.\n\nBy querying this entity with the\n[productOperation](https://shopify.dev/api/admin-graphql/current/queries/productOperation) query\nusing the ID that was returned\n[when the product was created or updated](https://shopify.dev/api/admin/migrate/new-product-model/sync-data#create-a-product-with-variants-and-options-asynchronously),\nthis can be used to check the status of an operation.\n\nThe `status` field indicates whether the operation is `CREATED`, `ACTIVE`, or `COMPLETE`.\n\nThe `product` field provides the details of the created or updated product.\n\nThe `userErrors` field provides mutation errors that occurred during the operation.\n"
